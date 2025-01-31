@@ -68,7 +68,8 @@
           const newTerms = terms.slice(0, -1); 
 
           resultspage = 'https://willmstwn.cwmars.org/Union/Search?view=list&lookfor=' + newTerms + '&searchIndex=' + indexType + '&searchSource=local';
-          window.location.assign(resultspage);
+          //window.location.assign(resultspage);
+          window.open(resultspage, '_blank').focus();
         }
       }
 
