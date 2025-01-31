@@ -44,8 +44,17 @@
     <button class= "search" id="button" >Search</button>
     
     <script>
-      //when search button is hit creates appropiate link
       const searchButton = document.getElementById("button");
+      //when user hits enter the search button is clicked 
+      document.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+        // Simulate a click event on  button
+        searchButton.click(); 
+         }
+      });
+
+   
+      //when search button is hit creates appropiate link
       searchButton.addEventListener("click", () => {
         goToLink();
       }); 
